@@ -295,10 +295,15 @@ nav{
     padding: 70px 10% 0;
     background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
   }
-  span{
-    color: #fefdfc;
+  .form1{
+    padding-right: 2rem;
+    height: 2rem;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0 0 10px rgb(240, 103, 93);
+    font-size: 12px;
   }
-
+  
 
 }
 
