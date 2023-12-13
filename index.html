@@ -8,55 +8,91 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
     <title>LyfeIndex Website</title>
   </head>
+
   <body>
     <div class="background-carousel">
-      <div class="dark-overlay"></div>
-      <header class="header">
-        <a href="#" class="logo"><span>L</span>yfe.</a>
-        <!-- Burger menu icon -->
-        <div class="burger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: rgba(249, 242, 242, 0)"
+      >
+        <div class="container-fluid">
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="color: #fff"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="#" class="logo order-lg-0 ml-auto d-block d-lg-none"
+            ><span>L</span>yfe.</a
+          >
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Memorials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form>
+              <!--class="d-flex input-group w-auto"-->
+              <input
+                type="search"
+                class="form1"
+                placeholder="        Search..."
+                aria-label="Search"
+              />
+              <button
+                data-mdb-ripple-init
+                class="btn2"
+                type="button"
+                data-mdb-ripple-color="dark"
+              >
+                Search
+              </button>
+            </form>
+            <a href="#" class="logo order-lg-0 ml-auto d-none d-lg-block"
+              ><span>L</span>yfe.</a
+            >
+          </div>
         </div>
+      </nav>
 
-        <nav class="navbar">
-          <a href="#" class="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Memorial</a>
-          <a href="#">Contact</a>
-          <input
-            class="search"
-            type="text"
-            placeholder="     Search..."
-            name="search"
-          />
-          <button class="search_button" type="submit">Search</button>
-        </nav>
-
-        <!-- Mobile Navbar -->
-        <div class="navbar-mobile">
-          <a href="#" class="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Memorial</a>
-          <a href="#">Contact</a>
-          <!-- Add the search bar here for mobile if needed -->
-          <input
-            class="search"
-            type="text"
-            placeholder="Search..."
-            name="search"
-          />
-          <button class="search_button" type="submit">Search</button>
-        </div>
-      </header>
       <section class="home">
         <div class="home-content">
           <b>
             Hello! We are Lyfe Index, ensuring everyone's story, regardless of
-            background, is remembered and cherished for generations
+            background, is remembered and cherished for generations .
           </b>
           <p>
             Everyone has a history and every history is interesting. The history
@@ -68,7 +104,7 @@
             that. Future generations can understand your life and it is a simple
             way to remember your loved ones.
           </p>
-          <a href="#" class="btn">Join US</a>
+          <a href="#" class="btn-new">Join US</a>
         </div>
         <div class="home-img">
           <img src="home.png" alt="" />
@@ -78,5 +114,11 @@
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+    ></script>
   </body>
 </html>
