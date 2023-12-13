@@ -5,10 +5,6 @@ var type = new Typed(".multiple-text",{
     backDelay:1000,
     loop:true,
 })
-      function openNav() {
-        document.querySelector('.navbar').style.width = '250px';
-      }
+import { Collapse, Ripple, initMDB } from "mdb-ui-kit";
 
-      function closeNav() {
-        document.querySelector('.navbar').style.width = '0';
-      }
+initMDB({ Collapse, Ripple });
