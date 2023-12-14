@@ -50,16 +50,107 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#" id="home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#" id="about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Memorials</a>
+                <a class="nav-link" href="#" id="memo">Memorials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <div class="language">
+                  <select class="lan" id="language" onchange="function1()">
+                    <option value="1">English</option>
+                    <option value="2">Africanns</option>
+                    <option value="3">Albanian</option>
+                    <option value="4">Arabic</option>
+                    <option value="5">Armenian</option>
+                    <option value="6">Bambara</option>
+                    <option value="7">Bangla</option>
+                    <option value="8">Belarusian</option>
+                    <option value="10">Bulgarian</option>
+                    <option value="59">Cantonese Chinese</option>
+                    <option value="13">Catalan</option>
+                    <option value="14">Cheyenne</option>
+                    <option value="15">Chichewa</option>
+                    <option value="16">Corsican</option>
+                    <option value="17">Creol</option>
+                    <option value="19">Czech</option>
+                    <option value="20">Danish</option>
+                    <option value="85">Dutch</option>
+                    <option value="22">Esperanto</option>
+                    <option value="23">Estonian</option>
+                    <!-- <option value="26">Farsi</option> !-->
+                    <option value="26">Filipino</option>
+                    <option value="27">Finnish</option>
+                    <option value="28">French</option>
+                    <option value="29">Frisian</option>
+                    <option value="30">Gaelic</option>
+                    <option value="31">Georgian</option>
+                    <option value="32">German</option>
+                    <option value="33">Greek</option>
+                    <option value="34">Gujarati</option>
+                    <option value="42">Hiligaynon</option>
+                    <option value="36">Hawaiian</option>
+                    <option value="37">Hebrew</option>
+                    <option value="38">Hindi</option>
+                    <option value="39">Hmong</option>
+                    <!--<option value="41">Hopi</option>-->
+                    <option value="41">Hungarian</option>
+                    <option value="43">Icelandic</option>
+                    <option value="44">Ilonggo</option>
+                    <option value="43">Indonesian</option>
+                    <option value="45">Irish</option>
+                    <option value="46">Italian</option>
+                    <option value="47">Japanese</option>
+                    <option value="48">Kannada</option>
+                    <!--<option value="51">Kapampangan</option>!-->
+                    <option value="50">Kiswahili</option>
+                    <option value="52">Korean</option>
+                    <option value="53">Latin</option>
+                    <option value="54">Latvian</option>
+                    <option value="56">Lithuanian</option>
+                    <option value="58">Malayalam</option>
+                    <option value="51">Marathi</option>
+                    <option value="61">Mohawk</option>
+                    <option value="63">Nahuatl</option>
+
+                    <option value="65">Norwegian</option>
+
+                    <option value="25">Persian</option>
+                    <option value="69">Pig Latin</option>
+                    <option value="70">Polish</option>
+                    <option value="71">Portuguese</option>
+                    <option value="72">Romanian</option>
+                    <option value="73">Russian</option>
+                    <option value="74">Scot Gaelic</option>
+                    <option value="75">Serbian</option>
+                    <option value="76">Setswana</option>
+                    <option value="77">Sindhi</option>
+
+                    <option value="79">Slovak</option>
+                    <option value="80">Slovenian</option>
+                    <option value="67">Spanish</option>
+                    <option value="50">Swahili</option>
+                    <option value="83">Swedish</option>
+
+                    <option value="86">Tagalog</option>
+
+                    <option value="88">Tahitian</option>
+                    <option value="89">Tamil</option>
+                    <option value="90">Thai</option>
+                    <option value="91">Turkish</option>
+                    <option value="92">Ukrainian</option>
+                    <option value="93">Urdu</option>
+                    <option value="94">Vietnamese</option>
+                    <option value="95">Welsh</option>
+                    <option value="96">Yiddish</option>
+                    <option value="97">Yoruba</option>
+                  </select>
+                </div>
               </li>
             </ul>
             <form>
@@ -67,7 +158,7 @@
               <input
                 type="search"
                 class="form1"
-                placeholder="        Search..."
+                placeholder="        Search"
                 aria-label="Search"
               />
               <button
@@ -75,6 +166,7 @@
                 class="btn2"
                 type="button"
                 data-mdb-ripple-color="dark"
+                id="search"
               >
                 Search
               </button>
@@ -85,21 +177,25 @@
 
       <section class="home">
         <div class="home-content">
-          <b>
-            Hello! We are Lyfe Index, ensuring everyone's story, regardless of
-            background, is remembered and cherished for generations .
-          </b>
-          <p>
-            Everyone has a history and every history is interesting. The history
-            books are only reserved for the most important people and over time,
-            lower and middle-class names disappear. Lyfe Index is dedicated to
-            making sure that everyone is remembered and has a legacy. Imagine
-            your great-great-grandchildren wanting to know who you were but
-            there were no third-person traces and accounts. Lyfe Index fixes
-            that. Future generations can understand your life and it is a simple
-            way to remember your loved ones.
-          </p>
-          <a href="#" class="btn-new">Join US</a>
+          <div id="displayarea1">
+            <b>
+              Hello! We are Lyfe Index, ensuring everyone's story, regardless of
+              background, is remembered and cherished for generations .
+            </b>
+          </div>
+          <div id="displayarea2">
+            <p>
+              Everyone has a history and every history is interesting. The
+              history books are only reserved for the most important people and
+              over time, lower and middle-class names disappear. Lyfe Index is
+              dedicated to making sure that everyone is remembered and has a
+              legacy. Imagine your great-great-grandchildren wanting to know who
+              you were but there were no third-person traces and accounts. Lyfe
+              Index fixes that. Future generations can understand your life and
+              it is a simple way to remember your loved ones.
+            </p>
+          </div>
+          <a href="#" class="btn-new" id="join">Join US</a>
         </div>
         <div class="home-img">
           <img src="home.png" alt="" />
@@ -107,8 +203,1367 @@
       </section>
     </div>
 
+    <script>
+      var jsonData = [
+        {
+          //English
+          id: 1,
+          home: "Home",
+          about: "About",
+          memorials: "Memorials",
+          language: "Language",
+          search: "Search",
+          hello:
+            "Hello! We are Lyfe Index, ensuring everyone's story, regardless of background, is remembered and cherished for generations.",
+          history_intro:
+            "Everyone has a history and every history is interesting",
+          join_us: "Join Us",
+        },
+        {
+          //Africanns
+          id: 2,
+          home: "Tuis",
+          about: "Oor",
+          memorials: "Gedenktekens",
+          language: "Taal",
+          search: "Soek",
+          hello:
+            "Hallo! Ons is Lyfe Index en verseker dat elkeen se storie, ongeag agtergrond, onthou en gekoester word vir geslagte lank.",
+          history_intro:
+            "Elkeen het 'n geskiedenis en elke geskiedenis is interessant",
+          join_us: "Sluit by Ons aan",
+        },
+        {
+          //Albanian
+          id: 3,
+          home: "Shtëpi",
+          about: "Rreth",
+          memorials: "Kujtime",
+          language: "Gjuha",
+          search: "Kërko",
+          hello:
+            "Përshëndetje! Ne jemi Lyfe Index dhe sigurohemi që historia e secilit, pavarësisht prej sfondit, të mbahet mend dhe të çmohej për breza.",
+          history_intro:
+            "Secili ka një histori dhe çdo histori është interesante",
+          join_us: "Bashkohu me Ne",
+        },
+        {
+          //Arabic
+          id: 4,
+          home: "الرئيسية",
+          about: "حول",
+          memorials: "النصب التذكارية",
+          language: "اللغة",
+          search: "ابحث",
+          hello:
+            "مرحبًا! نحن فهرس الحياة ونضمن أن يتم تذكر وتقدير قصة كل شخص، بغض النظر عن الخلفية، لأجيال طويلة.",
+          history_intro: "لديه الجميع تاريخًا وكل تاريخ مثير",
+          join_us: "انضم إلينا",
+        },
+        {
+          //Armenians
+          id: 5,
+          home: "Գլխավոր",
+          about: "Մասին",
+          memorials: "Հուշարձաններ",
+          language: "Լեզու",
+          search: "Որոնել",
+          hello:
+            "Բարեւ! Մենք ենք Lyfe Index եւ գանձում ենք, որ ամենինչպես իրենց պատմությունը, համապատասխանաբար, հիշվի են ու միասին ապշտում են։",
+          history_intro: "Ամենին կեանք ունի եւ ամեն կեանք հետո է հետաքրքրում",
+          join_us: "Միանալ Մեզ",
+        },
+        // Bambara
+        {
+          id: 6,
+          home: "Dumuni",
+          about: "Dɛmɛn",
+          memorials: "Nsiyɛn",
+          language: "Kan",
+          search: "Bɛbɔ",
+          hello:
+            "I ni sogoma! Ka Lyfe Index bɛ i yiri fɛ, muso fɛ, bɛ don ka bɛ njɛn fɛ kɛlɛ kɛlɛ.",
+          history_intro: "Aw ni bɛ ayɛlɛ kɛlɛ bɛ kɛlɛ tɛ fɛ",
+          join_us: "Kɔnɔkɔnɔn Kɔnɔ",
+        },
+        // Bengali
+        {
+          id: 7,
+          home: "বাড়ি",
+          about: "সম্পর্কে",
+          memorials: "স্মৃতিস্তম্ভ",
+          language: "ভাষা",
+          search: "অনুসন্ধান",
+          hello:
+            "হ্যালো! আমরা লাইফ ইন্ডেক্স, নিশ্চিত করছি যে প্রতিটি ব্যক্তির গল্প, পশ্চাত্তার, মনে রাখা এবং পোকানো হয় সম্প্রতি।",
+          history_intro:
+            "প্রতিটি ব্যক্তির একটি ইতিহাস আছে এবং প্রতিটি ইতিহাস আকর্ষণীয়",
+          join_us: "আমাদের সাথে যোগদান করুন",
+        },
+        // Belarusian
+        {
+          id: 8,
+          home: "Дома",
+          about: "Пра",
+          memorials: "Памятнікі",
+          language: "Мова",
+          search: "Шукаць",
+          hello:
+            "Прывітанне! Мы Lyfe Index і забяспечваем, каб гісторыя кожнага чалавека, незалежна ад фону, захоўвалася і цанілася на працягу пакаленняў.",
+          history_intro: "У кожнага ёсць гісторыя, і кожная гісторыя цікавая",
+          join_us: "Прыміце нас",
+        },
+        // Cebuano
+        {
+          id: 9,
+          home: "Balay",
+          about: "Nga Nahanungod",
+          memorials: "Mga Tan-aw",
+          language: "Lengguwahe",
+          search: "Pangita",
+          hello:
+            "Hello! Kami ang Lyfe Index ug nag-ensure nga ang istorya sa matag usa, bisan unsa ang ilang background, mapahimutang ug mapahalipay alang sa mga henerasyon.",
+          history_intro:
+            "Adunay istorya ang matag usa ug ang matag istorya maoy kaanindotan",
+          join_us: "Join Kanamo",
+        },
+        // Bulgarian
+        {
+          id: 10,
+          home: "Дом",
+          about: "Относно",
+          memorials: "Паметници",
+          language: "Език",
+          search: "Търсене",
+          hello:
+            "Здравей! Ние сме Lyfe Index и се грижим, всяка история, независимо от фона, да бъде запомнена и обичана за поколения.",
+          history_intro: "Всеки има история и всяка история е интересна",
+          join_us: "Присъединете се към нас",
+        },
+        // Khmer
+        {
+          id: 11,
+          home: "ផ្ទះ",
+          about: "អំពី",
+          memorials: "របាំបួប",
+          language: "ភាសា",
+          search: "ស្វែងរក",
+          hello:
+            "សួស្តី! យើងគឺ Lyfe Index ហើយធ្វើឱ្យបានឲ្យរស់នៅ និងស្រស់ស្អាតដល់រយៈពេលឆ្នាំ។",
+          history_intro: "មនុស្សមួយមានប្រវត្តិមួយ ហើយប្រវត្តិមួយគឺទេសចរ",
+          join_us: "ចូលរួមមកជាមួយយើង",
+        },
+        // Cantonese
+        {
+          id: 12,
+          home: "屋企",
+          about: "關於",
+          memorials: "紀念",
+          language: "語言",
+          search: "搵",
+          hello:
+            "你好！我哋係 Lyfe Index，確保每個人嘅故事，唔論背景點樣，都可以被記住同珍惜多代。",
+          history_intro: "每個人都有一個故事，每個故事都好有趣",
+          join_us: "加入我哋",
+        },
+        // Catalan
+        {
+          id: 13,
+          home: "Casa",
+          about: "Sobre",
+          memorials: "Monuments",
+          language: "Llengua",
+          search: "Cerca",
+          hello:
+            "Hola! Som Lyfe Index i ens assegurem que la història de cada persona, independentment de l'origen, sigui recordada i apreciada per generacions.",
+          history_intro:
+            "Tothom té una història i cada història és interessant",
+          join_us: "Uneix-te a nosaltres",
+        },
+        //Language: Mé'eve'ho'neheóeše (Cheyenne)
+        {
+          id: 14,
+          home: "Hové'ho'no",
+          about: "Néšovéšéva'éše'he",
+          memorials: "Néšého'ešeséme'še",
+          language: "Mé'eve'ho'neheóeše",
+          search: "Vé'ho'ëstôtse",
+          hello:
+            "Héévȧho! Myfe Index héésto'émoévȧhétse, hétanévȧho'éne'šéme'še hové'ho'no nétanešésto'émoévȧho.",
+          history_intro: "Nétanéme'šéme'še'éšenévȧho nȧ'hétanévȧho émoévȧhétse",
+          join_us: "Hésto'éme' šéme'ého'no",
+        },
+        //Language: Chilankhulo (Chichewa)
+        {
+          id: 15,
+          home: "Nyumba",
+          about: "Ndi",
+          memorials: "Makumbi",
+          language: "Chilankhulo",
+          search: "Pang'ono",
+          hello:
+            "Moni! Ife ndi Lyfe Index tikusangalatsa kuti chisautso cha pamwamba, chifukwa cha maziko, chiyambiridwa ndi chilengedwe cha izi.",
+          history_intro:
+            "Wina adalipo ndi chifundo, ndi chilichonse ndi chilichonse chodziwa",
+          join_us: "Lingalirani Nasi",
+        },
+
+        //Language: Lingua (Corsican)
+        {
+          id: 16,
+          home: "Casa",
+          about: "À propositu",
+          memorials: "Monumenti",
+          language: "Lingua",
+          search: "Cercà",
+          hello:
+            "Bonghjornu! Sìmu Lyfe Index è asicuràmu chì a storia di ogni persona, indipendentemente da u fondu, hè ramintata è custudita pè generazione.",
+          history_intro: "Ognunu hà una storia è ogni storia hè interessante",
+          join_us: "Unitevi à noi",
+        },
+
+        //Language: Lang (Haitian Creole)
+        {
+          id: 17,
+          home: "Lakay",
+          about: "Ou Sou",
+          memorials: "Moniman",
+          language: "Lang",
+          search: "Chèche",
+          hello:
+            "Alo! Nou se Lyfe Index, asire ke chak moun, san konsiderasyon pou orijin li, sove epi renmen pou jenerasyon.",
+          history_intro: "Chak moun gen yon istwa epi chak istwa enteresan",
+          join_us: "Rejwenn Nou",
+        },
+
+        // Language: Jezik (Bosnian)
+        {
+          id: 18,
+          home: "Doma",
+          about: "O nama",
+          memorials: "Spomenici",
+          language: "Jezik",
+          search: "Traži",
+          hello:
+            "Pozdrav! Mi smo Lyfe Index i brinemo se da se priča svakog pojedinca, bez obzira na pozadinu, pamti i čuva kroz generacije.",
+          history_intro: "Svako ima svoju priču i svaka priča je zanimljiva",
+          join_us: "Pridružite nam se",
+        },
+
+        //Language: Jazyk (Czech)
+        {
+          id: 19,
+          home: "Domov",
+          about: "O nás",
+          memorials: "Památníky",
+          language: "Jazyk",
+          search: "Hledat",
+          hello:
+            "Ahoj! Jsme Lyfe Index a staráme se o to, aby byl příběh každého, bez ohledu na pozadí, pamatován a milován po generace.",
+          history_intro: "Každý má svůj příběh a každý příběh je zajímavý",
+          join_us: "Připojte se k nám",
+        },
+        //Language: Sprog (Danish)
+        {
+          id: 20,
+          home: "Hjem",
+          about: "Om os",
+          memorials: "Mindesmærker",
+          language: "Sprog",
+          search: "Søg",
+          hello:
+            "Hej! Vi er Lyfe Index og sørger for, at historien for hver person, uanset baggrund, bliver husket og værdsat gennem generationer.",
+          history_intro:
+            "Alle har en historie, og enhver historie er interessant",
+          join_us: "Bliv medlem",
+        },
+        {
+          // Language: Lingvo (Esperanto)
+          id: 21,
+          home: "Hejmo",
+          about: "Pri",
+          memorials: "Memoraĵoj",
+          language: "Lingvo",
+          search: "Serĉi",
+          hello:
+            "Saluton! Ni estas Lyfe Index kaj certigas, ke la historio de ĉiu, senkonsidere pri la fono, estas memorata kaj ĉerizata tra generacioj.",
+          history_intro:
+            "Ĉiu havas historion kaj ĉiu historio estas interesega",
+          join_us: "Aliĝu al Ni",
+        },
+        {
+          id: 22,
+          // Estonian
+          home: "Kodu",
+          about: "Teave",
+          memorials: "Mälestusmärgid",
+          language: "Keel",
+          search: "Otsi",
+          hello:
+            "Tere! Oleme Lyfe Index ja hoolitseme selle eest, et igaühe lugu, sõltumata taustast, oleks meeles ja hoitud põlvest põlve.",
+          history_intro: "Igal inimesel on oma lugu ja iga lugu on huvitav",
+          join_us: "Liitu Meiega",
+        },
+        {
+          id: 23,
+          // Amharic
+          home: "መጋበዝ",
+          about: "ስለ",
+          memorials: "መነሻ ማህበረሰብ",
+          language: "ቋንቋ",
+          search: "ፈልግ",
+          hello:
+            "ሰላም! እኛ Lyfe Index ነን እና እንደገና ሰጠን ይህን ተጠቀመን ያጠናክር ነን። ለዚህ ወገን፣ በመንነት ያሉ ሰዎች በተለያዩ ችግሮች በመነሻ እና በተመን ላይ የተከፈቱ ናቸው።",
+          history_intro: "እያንዳንዱ እያንዳንዱ እስከ ሰማይ ሲመሠረት ይድረስ እና እንደ መረጃ ይመስለኛል",
+          join_us: "እንደ እኛ መቀመጥ",
+        },
+        {
+          id: 24,
+          // Icelandic
+          home: "Heim",
+          about: "Um",
+          memorials: "Minnismerki",
+          language: "Mál",
+          search: "Leita",
+          hello:
+            "Hallo! Vit eru Lyfe Index og tryggja, at søgan hjá hvørjum einstaklingi, uttan um bakgrund, verður minnt og elskad ígjøgnum kynslóðir.",
+          history_intro:
+            "Hvør einstakur hevur sína søgu, og hvør søga er áhugaverd",
+          join_us: "Melda teg til",
+        },
+        {
+          id: 25,
+          // Persian
+          home: "خانه",
+          about: "درباره",
+          memorials: "یادمان‌ها",
+          language: "زبان",
+          search: "جستجو",
+          hello:
+            "سلام! ما لایف ایندکس هستیم و تضمین می‌کنیم که داستان هر کسی، بدون توجه به پس زمینه، برای دوره‌ها به یاد مانده و گرامی داشته شود.",
+          history_intro: "هر کس داستان خود را دارد و هر داستان جالب است",
+          join_us: "به ما بپیوندید",
+        },
+        {
+          id: 26,
+          // Filipino
+          home: "Bahay",
+          about: "Tungkol sa",
+          memorials: "Alaala",
+          language: "Wika",
+          search: "Hanapin",
+          hello:
+            "Kamusta! Kami ay Lyfe Index at nag-aalaga na ang kwento ng bawat isa, kahit ano ang kanilang background, ay maalala at pahalagahan sa mga henerasyon.",
+          history_intro: "Lahat ay may kwento at bawat kwento ay kakaiba",
+          join_us: "Sumali sa Amin",
+        },
+        {
+          id: 27,
+          // Finnish
+          home: "Koti",
+          about: "Tietoa",
+          memorials: "Muistomerkit",
+          language: "Kieli",
+          search: "Etsi",
+          hello:
+            "Hei! Olemme Lyfe Index ja huolehdimme siitä, että jokaisen tarina, taustasta riippumatta, muistetaan ja arvostetaan sukupolvelta toiselle.",
+          history_intro:
+            "Jokaisella on oma tarinansa ja jokainen tarina on kiinnostava",
+          join_us: "Liity meihin",
+        },
+        {
+          id: 28,
+          // French
+          home: "Accueil",
+          about: "À propos",
+          memorials: "Mémoriaux",
+          language: "Langue",
+          search: "Rechercher",
+          hello:
+            "Salut! Nous sommes Lyfe Index et nous nous assurons que l'histoire de chacun, quel que soit son contexte, soit rappelée et chérie pendant des générations.",
+          history_intro:
+            "Tout le monde a une histoire et chaque histoire est intéressante",
+          join_us: "Rejoignez-nous",
+        },
+        {
+          //# Language: Taal (Frisian)
+          id: 29,
+          home: "Hûs",
+          about: "Oer",
+          memorials: "Monuminten",
+          language: "Taal",
+          search: "Sykje",
+          hello:
+            "Hallo! Wy binne Lyfe Index en soargje derfoar dat it ferhaal fan elkenien, ûnôfhinklik fan eftergrûn, ûnthâlden en wurdearre wurdt foar generaasjes lang.",
+          history_intro:
+            "Elkenien hat in ferhaal en elk ferhaal is ynteressant",
+          join_us: "Doch Mei Us Mei",
+        },
+        {
+          //Language: Cànain (Scottish Gaelic)
+          id: 30,
+          home: "Dhachaigh",
+          about: "Mu",
+          memorials: "Cuimhnichean",
+          language: "Cànain",
+          search: "Rannsach",
+          hello:
+            "Halo! 'S e Lyfe Index a th' annainn agus tha sinn a' dearbhadh gu bheil eachdraidh gach duine, gun smaoineachadh air an fhondo, a' cuimhneachadh agus a' luachadh tro ginealaichean.",
+          history_intro: "Tha gach duine agus gach eachdraidh inntinneach",
+          join_us: "Tar a-steach dhuinn",
+        },
+        {
+          //Language: ენა (Georgian)
+          id: 31,
+          home: "სახლი",
+          about: "შესახებ",
+          memorials: "მსახიობები",
+          language: "ენა",
+          search: "ძებნა",
+          hello:
+            "გამარჯობა! ჩვენ ვართ Lyfe Index და ვიზრებთ, რომ ყველას ისტორია, უამრავისათვის ფონის დარჩენილებისას, იქცევა და იყოს საყოველთვის.",
+          history_intro: "ყველას აქვს ისტორია და ყველა ისტორია საინტერესოა",
+          join_us: "ჩვენთან შეერთებული გახდი",
+        },
+        {
+          //Language: Sprache (German)
+          id: 32,
+          home: "Zuhause",
+          about: "Über uns",
+          memorials: "Denkmäler",
+          language: "Sprache",
+          search: "Suche",
+          hello:
+            "Hallo! Wir sind Lyfe Index und sorgen dafür, dass die Geschichte eines jeden, unabhängig von der Herkunft, für Generationen in Erinnerung bleibt und geschätzt wird.",
+          history_intro:
+            "Jeder hat eine Geschichte, und jede Geschichte ist interessant",
+          join_us: "Treten Sie uns bei",
+        },
+        {
+          //Language: Γλώσσα (Greek)
+          id: 33,
+          home: "Σπίτι",
+          about: "Περί",
+          memorials: "Μνημεία",
+          language: "Γλώσσα",
+          search: "Αναζήτηση",
+          hello:
+            "Γεια σας! Είμαστε το Lyfe Index και εξασφαλίζουμε ότι η ιστορία κάθε ατόμου, ανεξάρτητα από το υπόβαθρο, θα θυμάται και θα τιμάται για γενιές.",
+          history_intro:
+            "Κάθε άνθρωπος έχει μια ιστορία και κάθε ιστορία είναι ενδιαφέρουσα",
+          join_us: "Εγγραφείτε μαζί μας",
+        },
+        {
+          //Language: ભાષા (Gujarati)
+          id: 34,
+          home: "ઘર",
+          about: "વિશે",
+          memorials: "સ્મારકો",
+          language: "ભાષા",
+          search: "શોધો",
+          hello:
+            "હેલો! અમે Lyfe Index છીએ અને ખાતર કરીએ છીએ કે દરેક વ્યક્તિનો ઇતિહાસ, વાંછની અપેક્ષાનો અવગણન કરતાં, યાદ રાખવામાં આવશે અને પીડાનાં બાબતોનો આદર કરતાં.",
+          history_intro: "દરેકની એક વાર્તા છે અને દરેક વાર્તા રસાયણતંતુ છે",
+          join_us: "અમારા સાથે જોડાઓ",
+        },
+        {
+          //Language: Hilway nga hambal (Cebuano)
+          id: 35,
+          home: "Balay",
+          about: "Parte",
+          memorials: "Monumento",
+          language: "Hilway nga hambal",
+          search: "Pangita",
+          hello:
+            "Hello! Kami ang Lyfe Index kag nagapamulong kami nga dapat dumdumon kag higugmaon ang sugilanon sang kada isa, bisan diin man nga pumuluyo, para sa mga henerasyon.",
+          history_intro:
+            "Ang tagsa ka tawo may sugilanon kag ang kada sugilanon interesante",
+          join_us: "Uma ka sa amon",
+        },
+        {
+          //Language: ʻŌlelo (Hawaiian)
+          id: 36,
+          home: "Hale",
+          about: "No",
+          memorials: "Pūʻulu",
+          language: "ʻŌlelo",
+          search: "Imi",
+          hello:
+            "Aloha! ʻO mākou ke Lyfe Index a ua hāʻawi mākou i ka ʻike i ka moʻolelo o kēlā me kēia kanaka, ʻaʻole koho ʻia ka lako a pau, i nā hanauna a pau.",
+          history_intro:
+            "He moʻolelo nō ia no kēlā me kēia mea, a he moʻolelo ʻo ia i pono",
+          join_us: "Komo me mākou",
+        },
+        {
+          //Language: שפה (Hebrew)
+          id: 37,
+          home: "בית",
+          about: "אודות",
+          memorials: "אתרי זיכרון",
+          language: "שפה",
+          search: "חיפוש",
+          hello:
+            "שלום! אנחנו Lyfe Index ואנו מבטיחים שהסיפור של כל אדם, בלתי תלוי ברקע, ייזכר ויהיה יקר לדורות.",
+          history_intro: "כולם יש להם סיפור וכל סיפור מעניין",
+          join_us: "הצטרף אלינו",
+        },
+        {
+          //Language: भाषा (Hindi)
+          id: 38,
+          home: "घर",
+          about: "के बारे में",
+          memorials: "स्मारक",
+          language: "भाषा",
+          search: "खोज",
+          hello:
+            "नमस्ते! हम Lyfe Index हैं और हम सुनिश्चित करते हैं कि प्रत्येक व्यक्ति का इतिहास, पृष्ठभूमि को देखते हुए भी, पीढ़ियों तक याद रखा जाए और सराहा जाए।",
+          history_intro:
+            "प्रत्येक का अपना इतिहास होता है और प्रत्येक इतिहास रोमांचक होता है",
+          join_us: "हमारे साथ शामिल हों",
+        },
+        {
+          //Language: Lus (Hmong)
+          id: 39,
+          home: "Xaiv",
+          about: "Vim muaj",
+          memorials: "Kev noj",
+          language: "Lus",
+          search: "Cai",
+          hello:
+            "Nyob zoo! Peb yog Lyfe Index thiab yog cov txoj kev cai rau tag nrho tib neeg, tseem ceeb tsom xam thaum ib ncig.",
+          history_intro:
+            "Txawm cov neeg muaj kev kawm tshiab thiab txawm cov kawm txawm tshiab yuav tsum tau",
+          join_us: "Xyuas nrog peb",
+        },
+        {
+          //Language: Masikwa (Navajo)
+          id: 40,
+          home: "Tuvaqam",
+          about: "Nuhwiva",
+          memorials: "Ta'owuqwikat",
+          language: "Masikwa",
+          search: "Uqitqaq",
+          hello:
+            "Yá'át'ééh! Nu'umanu Lyfe Index ma'ii ła'ádłį́į́go yá'át'ééh hane', t'áá hwó' ají nááji t'áá hwó' diijí t'áá hwó' ánííníshnígi dóó yá'át'ééh naneeskaadii.",
+          history_intro:
+            "Kwakwhá! Numíla hwó' dyinini dóó kwakwhá hwó' dyinini dóó kwakwhá hwó' dyinini.",
+          join_us: "Tuvaqamééshye",
+        },
+        // Hungarian, hu
+        {
+          id: 41,
+          home: "Otthon",
+          about: "Rólunk",
+          memorials: "Emlékhelyek",
+          language: "Nyelv",
+          search: "Keresés",
+          hello:
+            "Helló! Mi vagyunk a Lyfe Index, és gondoskodunk arról, hogy mindenki története, háttértől függetlenül, emlékezetes legyen és generációkon át szeretetteljes maradjon.",
+          history_intro:
+            "Mindenkinek van egy története, és minden történet érdekes",
+          join_us: "Csatlakozz hozzánk",
+        },
+
+        // Hiligaynon, hil
+        {
+          id: 42,
+          home: "Balay",
+          about: "Parte",
+          memorials: "Monumento",
+          language: "Hilway nga hambal",
+          search: "Pangita",
+          hello:
+            "Hello! Kami ang Lyfe Index kag nagapamulong kami nga dapat dumdumon kag higugmaon ang sugilanon sang kada isa, bisan diin man nga pumuluyo, para sa mga henerasyon.",
+          history_intro:
+            "Ang tagsa ka tawo may sugilanon kag ang kada sugilanon interesante",
+          join_us: "Uma ka sa amon",
+        },
+
+        // Indonesian, id
+        {
+          id: 43,
+          home: "Rumah",
+          about: "Tentang",
+          memorials: "Kenangan",
+          language: "Bahasa",
+          search: "Cari",
+          hello:
+            "Halo! Kami adalah Lyfe Index, memastikan bahwa kisah setiap orang, tanpa memandang latar belakang, diingat dan dihargai untuk generasi.",
+          history_intro:
+            "Setiap orang memiliki sejarah, dan setiap sejarah menarik",
+          join_us: "Bergabunglah dengan kami",
+        },
+
+        // Greenlandic, kl
+        {
+          id: 44,
+          home: "Avannaa",
+          about: "Qanoq",
+          memorials: "Inunngornerit",
+          language: "Oqaasileri",
+          search: "Ilaavut",
+          hello:
+            "Halla! Illit pinngortitaq Lyfe Index, tamanna angunianga ullormut, taakkunartumik nukittumik takutinnut akiaqatigiinnut.",
+          history_intro:
+            "Ilit illit pisaraq nukittumik, taakkunartumik nukittumik",
+          join_us: "Aaqqi ukiullataq",
+        },
+
+        // Irish, ga
+        {
+          id: 45,
+          home: "Baile",
+          about: "Maidir le",
+          memorials: "Cuimhnichí",
+          language: "Teanga",
+          search: "Cuardaigh",
+          hello:
+            "Dia dhuit! Is muid Lyfe Index, a chinntíonn go gcuimhneoidh agus go gcóirfidh gach scéal, neamhspleách ar an bhunchloch, ar feadh na nglúnta.",
+          history_intro:
+            "Tá eachtra ag gach duine agus is suimiúil gach eachtra",
+          join_us: "Glac páirt linn",
+        },
+        {
+          id: 46,
+          home: "Casa",
+          about: "Informazioni",
+          memorials: "Monumenti",
+          language: "Lingua",
+          search: "Ricerca",
+          hello:
+            "Ciao! Siamo Lyfe Index, assicurandoci che la storia di ognuno, indipendentemente dallo sfondo, sia ricordata e apprezzata per generazioni.",
+          history_intro: "Ognuno ha una storia e ogni storia è interessante",
+          join_us: "Unisciti a noi",
+        },
+        {
+          id: 47,
+          home: "ホーム",
+          about: "約",
+          memorials: "記念碑",
+          language: "言語",
+          search: "検索",
+          hello:
+            "こんにちは！私たちはLyfe Indexです。すべての人の背景に関係なく、語り継がれ、数世代にわたって愛されるようにします。",
+          history_intro: "すべての人には歴史があり、すべての歴史は面白いです",
+          join_us: "参加する",
+        },
+        {
+          id: 48,
+          home: "ಮುಖಪುಟ",
+          about: "ಬಗ್ಗೆ",
+          memorials: "ಸ್ಮಾರಕಗಳು",
+          language: "ಭಾಷೆ",
+          search: "ಹುಡುಕು",
+          hello:
+            "ಹಲೋ! ನಾವು Lyfe Index ಆಗಿದ್ದೇವೆ, ಹೇಗೆ ಬಂದಿದ್ದರೂ ಪ್ರತಿಯೊಬ್ಬರ ಕಥೆ ನೆನಪಿಗೆ ತಂದು ಪೀಡಿಸುವುದು ಮತ್ತು ಪೀಡಿಸುವುದು ಖಚಿತವಾಗಿಯೇ ಇದೆ.",
+          history_intro:
+            "ಪ್ರತಿಯೊಬ್ಬರ ಹಿಂದಣ ಒಂದು ಇತಿಹಾಸವಿದೆ ಮತ್ತು ಪ್ರತಿಯೊಂದು ಇತಿಹಾಸ ಕುತೂಹಲಕರ",
+          join_us: "ನಮ್ಮನ್ನು ಸೇರಿ",
+        },
+        {
+          id: 49,
+          home: "Balay",
+          about: "Mibait",
+          memorials: "Memorial",
+          language: "Atyu",
+          search: "Ikit",
+          hello:
+            "Hello! Atyu ne ing Lyfe Index, atyu ne kekatamung pangyusnan ing kasaysayan ning sinuman, atyu man kekatamung king albugan, atyu man keng misan a karaklan.",
+          history_intro:
+            "Ing misan a tawu atyu ne king kayang kasaysayan at ing bawat kasaysayan atyu man king kabud.",
+          join_us: "Mate karela yamu",
+        },
+        {
+          //Lugha (Swahili)
+          id: 50,
+          home: "Nyumbani",
+          about: "Kuhusu",
+          memorials: "Kumbukumbu",
+          language: "Lugha",
+          search: "Tafuta",
+          hello:
+            "Halo! Sisi ni Lyfe Index, tuki hakikisha kwamba hadithi ya kila mtu, bila kujali asili, inakumbukwa na kupendwa kwa vizazi.",
+          history_intro: "Kila mtu ana historia na kila historia ni ya kuvutia",
+          join_us: "Jiunge nasi",
+        },
+        {
+          //Bhasa (Marathi)
+          id: 51,
+          home: "Ghar",
+          about: "Vartate",
+          memorials: "Smaranon",
+          language: "Bhasa",
+          search: "Shodh",
+          hello:
+            "हॅलो! आसा Lyfe Index, सर्वांची कथा, बॅकग्राऊंड वायसाची, स्मरण करण्यात येऊन सुनिश्चित करतोय.",
+          history_intro: "प्रत्येककडची एक कथा आहे आणि प्रत्येक कथा रुचिकर आहे",
+          join_us: "आमका सोबत येईल",
+        },
+        {
+          //언어 (Korean)
+          id: 52,
+          home: "집",
+          about: "소개",
+          memorials: "기념비",
+          language: "언어",
+          search: "검색",
+          hello:
+            "안녕하세요! 우리는 Lyfe Index입니다. 모든 사람의 이야기가 배경과 무관하게 기억되고 세대를 초월해 사랑받도록 보장합니다.",
+          history_intro:
+            "모든 사람은 과거가 있으며 모든 과거는 흥미로운 것이다",
+          join_us: "우리와 함께하세요",
+        },
+        {
+          //Lingua (Latin)
+          id: 53,
+          home: "Domus",
+          about: "De",
+          memorials: "Memoria",
+          language: "Lingua",
+          search: "Quaero",
+          hello:
+            "Salve! Sumus Lyfe Index, curantes ut historia cuiusque, sine respectu ad originem, memorata et dilata sit per aetates.",
+          history_intro:
+            "Cuiusque hominis historia est et omnis historia est mirabilis",
+          join_us: "Coniunge nobiscum",
+        },
+        {
+          //Valoda (Latvian)
+          id: 54,
+          home: "Mājas",
+          about: "Par",
+          memorials: "Memoriāli",
+          language: "Valoda",
+          search: "Meklēt",
+          hello:
+            "Sveiki! Mēs esam Lyfe Index, nodrošinot, ka ikviena stāsts, neatkarīgi no fona, tiek atcerēts un mīlēts paaudzēm ilgi.",
+          history_intro: "Katram ir savs stāsts un katrs stāsts ir interesants",
+          join_us: "Pievienojies mums",
+        },
+        {
+          //لغة (Arabic)
+          id: 55,
+          home: "المنزل",
+          about: "حول",
+          memorials: "تذكار",
+          language: "لغة",
+          search: "ابحث",
+          hello:
+            "مرحبا! نحن Lyfe Index، نضمن أن يتم تذكر قصة كل شخص، بغض النظر عن الخلفية، وتُعتبر لأجيال.",
+          history_intro: "كل شخص لديه تاريخ وكل تاريخ مثير للاهتمام",
+          join_us: "انضم إلينا",
+        },
+        {
+          //Kalba (Lithuanian)
+          id: 56,
+          home: "Namai",
+          about: "Apie",
+          memorials: "Paminklai",
+          language: "Kalba",
+          search: "Ieškoti",
+          hello:
+            "Sveiki! Mes esame Lyfe Index, užtikrinantys, kad kiekvieno, nepriklausomai nuo kilmės, pasakojimas būtų prisimenamas ir branginamas per kartas.",
+          history_intro:
+            "Kiekvienas turi savo istoriją, ir kiekviena istorija yra įdomi",
+          join_us: "Prisijunkite prie mūsų",
+        },
+        {
+          //Bahasa (Indonesian)
+          id: 57,
+          home: "Rumah",
+          about: "Tentang",
+          memorials: "Peringatan",
+          language: "Bahasa",
+          search: "Cari",
+          hello:
+            "Hello! Kami Lyfe Index, memastikan kisah setiap orang, tanpa mengira latar belakang, diingati dan dihargai untuk generasi-generasi.",
+          history_intro:
+            "Setiap orang mempunyai sejarah dan setiap sejarah adalah menarik",
+          join_us: "Sertai Kami",
+        },
+        {
+          //ഭാഷ (Malayalam)
+          id: 58,
+          home: "വീട്",
+          about: "കുറിച്ച്",
+          memorials: "സ്മൃതിസ്ഥലങ്ങൾ",
+          language: "ഭാഷ",
+          search: "തിരയുക",
+          hello:
+            "ഹലോ! ഞങ്ങൾ ലൈഫ് ഇൻഡക്സാണ്, പരംപരാഗതങ്ങളിലെ പ്രതിയുടെ കഥ ചിന്തിക്കുന്നതും പ്രശംസിക്കുന്നതും ഉറപ്പാക്കുന്നതുമാക്കുന്നു.",
+          history_intro:
+            "ഓരോരുത്തരുടെയും ഒരു ചരിത്രം ഉണ്ടുകൂടാനും ഓരോരുത്തരുടെയും ചരിത്രം ആസക്തികരമാണ്",
+          join_us: "ഞങ്ങളിൽ ചേരുക",
+        },
+        {
+          //语言 (Chinese)
+          id: 59,
+          home: "家",
+          about: "关于",
+          memorials: "纪念物",
+          language: "语言",
+          search: "搜索",
+          hello:
+            "你好！我们是Lyfe Index，确保每个人的故事，不论背景如何，都能在世世代代中被记住和珍视。",
+          history_intro: "每个人都有自己的历史，而每个历史都是有趣的",
+          join_us: "加入我们",
+        },
+        {
+          //भाषा (Marathi)
+          id: 60,
+          home: "घर",
+          about: "बद्दल",
+          memorials: "स्मारक",
+          language: "भाषा",
+          search: "शोधा",
+          hello:
+            "नमस्कार! आम्ही Lyfe Index आहोत, सर्वांच्या कडून, अंगीकार केलेल्या पृष्ठभूमीतर्फे, प्रत्येकाची कथा स्मरणात आणि गौरवानंतर ठेवण्यात सुनिश्चित करतो.",
+          history_intro: "प्रत्येकाच्या कथेचं आणि प्रत्येक कथेचं रोचक असतं",
+          join_us: "आमच्यात सामील व्हा",
+        },
+        {
+          //Ietsionkwatókha (Mohawk)
+          id: 61,
+          home: "Ioteriatakwe’ne",
+          about: "Ietewáhstha’nehtho",
+          memorials: "Ietókwiʼtsirestaʼkhawi",
+          language: "Ietsionkwatókha",
+          search: "Ionákta’kwiye",
+          hello:
+            "Ahow! Aweh Lyfe Index, ón:kwe sewakátshon ne oní:son’akwe tánon skén:nen tánon akwé:kon nón:we ne raonkwihiátsera.",
+          history_intro: "Awén:’en ne ón:kwe onkén:’a ne ohkwá:li ne oní:son.",
+          join_us: "Ionatáne",
+        },
+        {
+          //اللغة (Arabic)
+          id: 62,
+          home: "المنزل",
+          about: "حول",
+          memorials: "التذكارات",
+          language: "اللغة",
+          search: "البحث",
+          hello:
+            "مرحبًا! نحن Lyfe Index ، نضمن أن تظل قصة الجميع ، بغض النظر عن الخلفية ، محفورة ومحبوبة للأجيال.",
+          history_intro: "لديك كل واحد تاريخ وكل تاريخ مثير للاهتمام",
+          join_us: "انضم إلينا",
+        },
+        {
+          //In tlahtōlmati (Nahuatl)
+          id: 63,
+          home: "Kāmātlālli",
+          about: "In īehkōtl",
+          memorials: "In īmāmātlālli",
+          language: "In tlahtōlmati",
+          search: "Tēmiya",
+          hello:
+            "Ānmitl! Yeka Lyfe Index, kicxitlahtōya īxiptli tētlāxtiliznequi, īhuānī teicnohpa ximōhpaliznequi tlamantli.",
+          history_intro: "Ca mātlactli tlahtōlmati īpan in mātlactli",
+          join_us: "Tlamanextia",
+        },
+        {
+          //Diné bizaad (Navajo)
+          id: 64,
+          home: "Hogání",
+          about: "Níłtł’ish",
+          memorials: "T’áá hwííh",
+          language: "Diné bizaad",
+          search: "Yéego",
+          hello:
+            "Yá'át'ééh! Ayóó anííníshní, Lyfe Index yiníłchííʼgo, chízin da shidíłginígíí da shiłtóhígíí, ałtso t’áá hwó’ ají t’áá hwó’ diijí.",
+          history_intro:
+            "Diné bizaad bik’ehgo bí aghwé’éhígíí da t’áá hwó’ diníjiní.",
+          join_us: "Kéyah anííníshní",
+        },
+        {
+          //Språk (Norwegian)
+          id: 65,
+          home: "Hjem",
+          about: "Om",
+          memorials: "Minnesmerker",
+          language: "Språk",
+          search: "Søk",
+          hello:
+            "Hei! Vi er Lyfe Index og sørger for at alles historie, uavhengig av bakgrunn, blir husket og verdsatt gjennom generasjonene.",
+          history_intro:
+            "Alle har en historie, og enhver historie er interessant",
+          join_us: "Bli med oss",
+        },
+        {
+          //Saray Salita (Ilocano)
+          id: 66,
+          home: "Bayay",
+          about: "Mayadngan",
+          memorials: "Saray Pamagataytayaban",
+          language: "Saray Salita",
+          search: "Bilay",
+          hello:
+            "Aro! Sikayo ti Lyfe Index, agbalin a dakkel ken pagsayaatan ti sebbangan ti maysa a tao, saan nga adda kasasaadanna, ket ibagbagam iti annuroten ken nasken a nangisit iti pannakamaymaysa.",
+          history_intro: "Sikayon ngem annak yo ti sawen yo ken ti napaltog yo",
+          join_us: "Umayka kadakayo",
+        },
+        {
+          //Idioma (Spanish)
+          id: 67,
+          home: "Casa",
+          about: "Tokante",
+          memorials: "Monumentunan",
+          language: "Idioma",
+          search: "Buska",
+          hello:
+            "Hola! Nos ta Lyfe Index, asegurando cu cada storia di cada un, sin importa di su background, ta wordo recorda y stima pa generacionnan.",
+          history_intro:
+            "Tur hende tin un historia y cada historia ta interesante",
+          join_us: "Drenta cu Nos",
+        },
+        {
+          //زبان (Persian)
+          id: 68,
+          home: "خانه",
+          about: "درباره",
+          memorials: "یادمانها",
+          language: "زبان",
+          search: "جستجو",
+          hello:
+            "سلام! ما لایف ایندکس هستیم و اطمینان حاصل می‌کنیم که داستان هر کسی، بدون توجه به پس زمینه، برای نسل‌ها به یاد مانده و گرامی باشد.",
+          history_intro: "همه یک تاریخ دارند و هر تاریخی جالب است",
+          join_us: "به ما بپیوندید",
+        },
+        {
+          id: 69,
+          //Anguagelay (Pig Latin)
+          home: "Omay",
+          about: "Aboutay",
+          memorials: "Emorialsmay",
+          language: "Anguagelay",
+          search: "Earchsay",
+          hello:
+            "Ellohay! Eway areway Yfelay Indexway, ensuringway everyoneway's orystay, regardlessway ofway ackgroundbay, isway ememberedray andway erishedchay orfay enerationsgay.",
+          history_intro:
+            "Everyoneway ashay aay istoryhay andway everyway istoryhay isway interestingway",
+          join_us: "Oinjay Usyay",
+        },
+        {
+          //Język (Polish)
+          id: 70,
+          home: "Dom",
+          about: "O nas",
+          memorials: "Pomniki",
+          language: "Język",
+          search: "Szukaj",
+          hello:
+            "Cześć! Jesteśmy Lyfe Index i zapewniamy, że historia każdego, niezależnie od tła, jest zapamiętana i ceniona przez pokolenia.",
+          history_intro:
+            "Każdy ma swoją historię, a każda historia jest interesująca",
+          join_us: "Dołącz do nas",
+        },
+        {
+          // Idioma (Portuguese)
+          id: 71,
+          home: "Casa",
+          about: "Sobre",
+          memorials: "Memoriais",
+          language: "Idioma",
+          search: "Pesquisar",
+          hello:
+            "Olá! Somos a Lyfe Index, garantindo que a história de todos, independentemente do background, seja lembrada e apreciada por gerações.",
+          history_intro:
+            "Todo mundo tem uma história e cada história é interessante",
+          join_us: "Junte-se a nós",
+        },
+        {
+          //Limbă (Romanian)
+          id: 72,
+          home: "Acasă",
+          about: "Despre",
+          memorials: "Monumente",
+          language: "Limbă",
+          search: "Căutare",
+          hello:
+            "Salut! Suntem Lyfe Index și ne asigurăm că povestea fiecăruia, indiferent de background, este amintită și prețuită de generații.",
+          history_intro:
+            "Fiecare are o istorie și fiecare istorie este interesantă",
+          join_us: "Alătură-te nouă",
+        },
+        {
+          //Язык (Russian)
+          id: 73,
+          home: "Домой",
+          about: "О нас",
+          memorials: "Мемориалы",
+          language: "Язык",
+          search: "Поиск",
+          hello:
+            "Привет! Мы - Lyfe Index, и мы гарантируем, что история каждого, независимо от прошлого, будет помнена и дорожена в течение многих поколений.",
+          history_intro:
+            "У каждого есть своя история, и каждая история интересна",
+          join_us: "Присоединяйтесь к нам",
+        },
+        {
+          //Cànan (Scottish Gaelic)
+          id: 74,
+          home: "Dhachaigh",
+          about: "Mu",
+          memorials: "Cuimhneachain",
+          language: "Cànan",
+          search: "Rannsach",
+          hello:
+            "Hàlo! Tha sinn na Lyfe Index, a' dearbhadh gum bi eachdraidh gach duine, gun coigrich air an fhon, air a chuimhneachadh agus air a ghràdhachadh airson ginealaichean.",
+          history_intro:
+            "Tha eachdraidh aig gach duine agus tha gach eachdraidh freagarrach",
+          join_us: "Thig còmhla rinn",
+        },
+        {
+          //Jezik (Serbian)
+          id: 75,
+          home: "Domaća stranica",
+          about: "O nama",
+          memorials: "Spomenici",
+          language: "Jezik",
+          search: "Pretraga",
+          hello:
+            "Zdravo! Mi smo Lyfe Index i obezbeđujemo da se priče svakog, bez obzira na poreklo, pamte i cenjuju kroz generacije.",
+          history_intro:
+            "Svako ima svoju istoriju i svaka istorija je zanimljiva",
+          join_us: "Pridružite nam se",
+        },
+        {
+          //Seantšha (Tswana)
+          id: 76,
+          home: "Lefarologa",
+          about: "Mongwe le mongwe",
+          memorials: "Ditlhopho",
+          language: "Seantšha",
+          search: "Go dira dilo",
+          hello:
+            "Dumela! Re le Lyfe Index, re direla gore go tlogele motho yoo, ga gona pego, e tlogele le go itumedisa ka mokgwa wa go dira fa metswalle.",
+          history_intro:
+            "Le yoo e ne e le istori le ya go na le tsone, le yoo e le istori e e nngwe e e le yoo e reetsa",
+          join_us: "Tswalang le rona",
+        },
+        {
+          // زبان (Sindhi)
+          id: 77,
+          home: "گهر",
+          about: "پانچايتي",
+          memorials: "يادگار",
+          language: "زبان",
+          search: "ڳولا",
+          hello:
+            "هالو! آسان Lyfe انڊيڪس آهي، جيڪڏهن پنھنجي پس منظر کي پس منظر ڪري ڇڏا، سڀني گرمي جي نالا ٿا ۽ ساراي ناسل مان اچار جو گرامڻ چاهيون ٿا.",
+          history_intro:
+            "هر ڏينهن پاسي ڪجهه سانچو آهي ۽ ۽هر ڏينهن جو سانچو دلچسپ آهي",
+          join_us: "سانگ ڦنھنجي",
+        },
+        {
+          //Iyúhaŋkečiyapi (Dakota)
+          id: 78,
+          home: "Tȟáŋka",
+          about: "Šničhčhíŋ",
+          memorials: "Ičíčičhiȟúŋ",
+          language: "Iyúhaŋkečiyapi",
+          search: "Iyábleč'ičhič'iyúŋ",
+          hello:
+            "Hau! Lyfe Index yeló, héčhel uŋspéič’ičhiŋčiyata, wičhíyayela yo, yuháŋkečiyapi híčhežiŋčičhiŋčiyaya, kičhíyuyayela yo.",
+          history_intro:
+            "Wičhíyayela oíčhiŋčičhiŋčiyata, hécetušni héčhel oíyokiyapika",
+          join_us: "Iyúhaŋkéwičhalakič'ič'iyapi",
+        },
+        {
+          //Jazyk (Slovak)
+          id: 79,
+          home: "Domov",
+          about: "O nás",
+          memorials: "Pamätníky",
+          language: "Jazyk",
+          search: "Hľadať",
+          hello:
+            "Ahoj! Sme Lyfe Index a zabezpečujeme, aby sa príbehy každého, bez ohľadu na pôvod, pamätali a boli milované generáciami.",
+          history_intro:
+            "Každý má svoju históriu a každá história je zaujímavá",
+          join_us: "Pripojte sa k nám",
+        },
+        {
+          //Jezik (Slovenian)
+          id: 80,
+          home: "Domov",
+          about: "O nas",
+          memorials: "Spominski parki",
+          language: "Jezik",
+          search: "Iskanje",
+          hello:
+            "Pozdravljeni! Smo Lyfe Index in skrbimo, da se zgodbe vsakega, ne glede na ozadje, pomnijo in cenijo skozi generacije.",
+          history_intro: "Vsak ima svojo zgodbo in vsaka zgodba je zanimiva",
+          join_us: "Pridružite se nam",
+        },
+        {
+          //Idioma (Spanish)
+          id: 81,
+          home: "Inicio",
+          about: "Acerca de",
+          memorials: "Monumentos",
+          language: "Idioma",
+          search: "Buscar",
+          hello:
+            "¡Hola! Somos Lyfe Index, asegurando que la historia de todos, independientemente de su origen, sea recordada y apreciada por generaciones.",
+          history_intro:
+            "Todos tienen una historia y cada historia es interesante",
+          join_us: "Únete a nosotros",
+        },
+        {
+          //Lugha (Swahili)
+          id: 82,
+          home: "Nyumbani",
+          about: "Kuhusu",
+          memorials: "Maadhimisho",
+          language: "Lugha",
+          search: "Tafuta",
+          hello:
+            "Halo! Sisi ni Lyfe Index, kuhakikisha hadithi ya kila mtu, bila kujali asili, inakumbukwa na kupendwa kwa vizazi.",
+          history_intro: "Kila mtu ana historia na kila historia ni ya kuvutia",
+          join_us: "Jiunge nasi",
+        },
+        {
+          //Språk (Swedish)
+          id: 83,
+          home: "Hem",
+          about: "Om oss",
+          memorials: "Minnesmärken",
+          language: "Språk",
+          search: "Sök",
+          hello:
+            "Hej! Vi är Lyfe Index och ser till att varje persons historia, oavsett bakgrund, blir ihågkommen och älskad i generationer.",
+          history_intro:
+            "Alla har en historia och varje historia är intressant",
+          join_us: "Gå med oss",
+        },
+        {
+          //Sprache (German)
+          id: 84,
+          home: "Zuhause",
+          about: "Über uns",
+          memorials: "Denkmäler",
+          language: "Sprache",
+          search: "Suche",
+          hello:
+            "Hallo! Wir sind Lyfe Index und sorgen dafür, dass die Geschichte jedes Menschen, unabhängig von der Herkunft, für Generationen in Erinnerung bleibt und geschätzt wird.",
+          history_intro:
+            "Jeder hat eine Geschichte und jede Geschichte ist interessant",
+          join_us: "Treten Sie uns bei",
+        },
+        {
+          // Taal (Dutch)
+          id: 85,
+          home: "Thuis",
+          about: "Over ons",
+          memorials: "Gedenktekens",
+          language: "Taal",
+          search: "Zoeken",
+          hello:
+            "Hallo! Wij zijn Lyfe Index en zorgen ervoor dat het verhaal van iedereen, ongeacht de achtergrond, wordt herinnerd en gekoesterd voor generaties.",
+          history_intro:
+            "Iedereen heeft een geschiedenis en elke geschiedenis is interessant",
+          join_us: "Doe mee",
+        },
+        {
+          //Wika (Tagalog)
+          id: 86,
+          home: "Tahanan",
+          about: "Tungkol sa",
+          memorials: "Gunita",
+          language: "Wika",
+          search: "Hanapin",
+          hello:
+            "Kamusta! Kami ang Lyfe Index, na nagtitiyak na ang kwento ng bawat isa, kahit ano ang pinagmulan, ay naaalala at iniingatan para sa mga henerasyon.",
+          history_intro:
+            "Lahat ay may kasaysayan at ang bawat kasaysayan ay nakakawili",
+          join_us: "Sumali sa Amin",
+        },
+        {
+          //Gú-lōe (Hakka Chinese)
+          id: 87,
+          home: "Kah-khu",
+          about: "Guán-liān",
+          memorials: "Lú-sòaⁿ",
+          language: "Gú-lōe",
+          search: "Kooh-chhè",
+          hello:
+            "Lín-hó! Wa̍t-sí Lyfe Index, tio̍h-ê gún-ún, bē-khò͘-ū gún-ún, tāi-tsè-ū pún-ún, lín-sū mō͘-ū gún-ún iâⁿ-gê.",
+          history_intro: "Iáⁿ-gê ū it-seng, bûn-seng sī iāⁿ-gê",
+          join_us: "Chhia̍h-lí--che",
+        },
+        {
+          //Reo (Tahitian)
+          id: 88,
+          home: "Fare",
+          about: "Mai teie",
+          memorials: "Pātūtū",
+          language: "Reo",
+          search: "Raparau",
+          hello:
+            "Ia ora na! Mātou te Lyfe Index, e ti'a'i teie noa'i te ora o te tino, e hāamanuhia e fano i te tau ātea.",
+          history_intro:
+            "Te mau iʻa e rii i te huru, e te huru o te mau iʻa e roa",
+          join_us: "Haere mai",
+        },
+        {
+          //மொழி (Tamil)
+          id: 89,
+          home: "வீடு",
+          about: "பற்றி",
+          memorials: "நினைவுகள்",
+          language: "மொழி",
+          search: "தேடு",
+          hello:
+            "வணக்கம்! எங்கள் Lyfe Index, ஒவ்வொருவரின் கதை, பிறருக்கு மாறாத படி ஞாபகப்படும் மற்றும் காத்திருக்கிறது.",
+          history_intro:
+            "ஒவ்வொருவருக்கும் ஒரு கதை உண்டு, மற்றும் ஒவ்வொரு கதை குறிப்புரை",
+          join_us: "எங்களுடன் சேரவும்",
+        },
+        {
+          //ภาษา (Thai)
+          id: 90,
+          home: "บ้าน",
+          about: "เกี่ยวกับ",
+          memorials: "อนุรักษ์",
+          language: "ภาษา",
+          search: "ค้นหา",
+          hello:
+            "สวัสดี! เราคือ Lyfe Index ที่รักษาให้เรื่องราวของทุกคน โดยไม่ว่ามีรากฐานอย่างไร จะได้รับความจำไว้และรักษาไว้สำหรับรุ่นต่อไป",
+          history_intro: "ทุกคนมีประวัติศาสตร์และทุกประวัติศาสตร์นั้นน่าสนใจ",
+          join_us: "มาร่วมกับเรา",
+        },
+        {
+          //Turkish (Türkçe)
+          id: 91,
+          home: "Ev",
+          about: "Hakkında",
+          memorials: "Anıtlar",
+          language: "Dil",
+          search: "Ara",
+          hello:
+            "Merhaba! Biz Lyfe Index, herkesin hikayesini, geçmişine bakılmaksızın, nesiller boyunca hatırlanması ve değerli olması için sağlayan bir platformuz.",
+          history_intro: "Herkesin bir hikayesi var ve her hikaye ilginçtir",
+          join_us: "Bize Katılın",
+        },
+        {
+          //Ukrainian (Українська)
+          id: 92,
+          home: "Дім",
+          about: "Про нас",
+          memorials: "Меморіали",
+          language: "Мова",
+          search: "Пошук",
+          hello:
+            "Привіт! Ми - Lyfe Index, і ми гарантуємо, що історія кожного, незалежно від походження, залишається в пам'яті та шанується протягом поколінь.",
+          history_intro: "У кожного є своя історія, і кожна історія цікава",
+          join_us: "Приєднуйтесь до нас",
+        },
+        {
+          //Urdu (اردو)
+          id: 93,
+          home: "گھر",
+          about: "کے بارے میں",
+          memorials: "یادگار",
+          language: "زبان",
+          search: "تلاش کریں",
+          hello:
+            "ہیلو! ہم لائف انڈیکس ہیں، یہ یہ سنجیدہ ہے کہ ہر شخص کی کہانی، جہاں تک بھی ورثہ ہو، یاد رکھی جاتی ہے اور دلیل کی جاتی ہے۔",
+          history_intro: "ہر کسی کی ایک تاریخ ہے اور ہر تاریخ دلچسپ ہے",
+          join_us: "ہمارے ساتھ شامل ہوں",
+        },
+        {
+          //Vietnamese (Tiếng Việt)
+          id: 94,
+          home: "Nhà",
+          about: "Về chúng tôi",
+          memorials: "Đài tưởng niệm",
+          language: "Ngôn ngữ",
+          search: "Tìm kiếm",
+          hello:
+            "Chào bạn! Chúng tôi là Lyfe Index, đảm bảo mọi câu chuyện, bất kỳ nền tảng nào, được nhớ và trân trọng qua các thế hệ.",
+          history_intro:
+            "Mỗi người đều có một lịch sử và mỗi lịch sử đều thú vị",
+          join_us: "Tham gia với chúng tôi",
+        },
+        {
+          //Welsh (Cymraeg)
+          id: 95,
+          home: "Cartref",
+          about: "Am",
+          memorials: "Cofebion",
+          language: "Iaith",
+          search: "Chwilio",
+          hello:
+            "Helo! Ni yw Lyfe Index, yn sicrhau bod stori pawb, waeth beth fo'u cefndir, yn cael eu cofio ac yn cael eu parchu am genedlaethau.",
+          history_intro: "Mae gan bawb stori ac mae pob hanes yn ddiddorol",
+          join_us: "Ymunwch â ni",
+        },
+        {
+          //Yiddish (ייִדיש)
+          id: 96,
+          home: "היים",
+          about: "אודות",
+          memorials: "יידיש",
+          language: "אַ שפּראַך",
+          search: "זוכן",
+          hello:
+            "העלאָ! מיר זענען Lyfe אינדעקס, פֿאַרגעוויסן אַלעס, אונאָבהאַנגיק פון הינטערגרונד, איז געדענקט און פֿאַרצייכנד פֿאַר די דאָרפֿקומענדיק.",
+          history_intro:
+            "יעדער האָט אַ געשיכטע און יעדער געשיכטע איז פֿאַסצינירליך",
+          join_us: "גייט אונז אין",
+        },
+        {
+          //Yoruba (Èdá)
+          id: 97,
+          home: "Ile",
+          about: "Ní ilẹ̀",
+          memorials: "ẹ̀dá",
+          language: "Èdá",
+          search: "Wọlé",
+          hello:
+            "Ẹ̀ kaárọ̀! Awa ni Lyfe Index, ṣíṣẹ́ rẹ̀ láti ṣèdá gbogbo èdá, kóókóó ìṣẹ́ rẹ̀ yìí ló dá ilẹ̀-èkó, ń wọ̀n ní àkókòó tí gbogbo àwọn ìyá gẹ̀ẹ̀sì àwọn ìyá.",
+          history_intro:
+            "Kọọkan gbogbo ní èdá àwọn eniyan, kọọkan gbogbo ní àwọn eniyan ni wọn ṣé wà.",
+          join_us: "Wàá tọwọ́",
+        },
+      ];
+
+      function function1() {
+        console.log("Started");
+        // Get the selected value from the dropdown
+        var selectedValue = document.getElementById("language").value;
+
+        // Find the corresponding data based on the selected value
+        var selectedData = jsonData.find(
+          (item) => item.id === parseInt(selectedValue)
+        );
+
+        // Display para in the first designated area with <p> tags
+        document.getElementById("displayarea1").innerHTML =
+          "<b>" + selectedData.hello + "</b>";
+
+        // Display note in the second designated area
+        document.getElementById("displayarea2").innerHTML =
+          "<p>" + selectedData.history_intro + "</p>";
+
+        //home
+        document.getElementById("home").innerHTML = selectedData.home;
+
+        //about
+        document.getElementById("about").innerHTML = selectedData.about;
+
+        //memo
+        document.getElementById("memo").innerHTML = selectedData.memorials;
+
+        //search
+        document.getElementById("search").innerHTML = selectedData.search;
+
+        //join
+        document.getElementById("join").innerHTML = selectedData.join_us;
+      }
+    </script>
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
 
     <!-- MDB -->
     <script
@@ -116,4 +1571,5 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
     ></script>
   </body>
+  <!-- <script src="../New folder/script.js"></script> -->
 </html>
